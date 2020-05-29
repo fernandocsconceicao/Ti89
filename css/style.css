@@ -1,0 +1,22 @@
+/* Zerando a pagina*/
+*{
+    margin: 0px;
+
+}
+#estutura{
+    background-color: whitesmoke; /* de fundo;*/
+    width: 90%; /* largura*/
+    margin-left: auto; /*margem a esquerda*/
+    margin-right: auto ;/* margem a direita*/
+
+}
+#estrutura #titulo{
+    background-image: url("..imagens/titulo.jpg");/*imagem dentro do titulo*/
+    background-position: -400px -380px;
+    color: black;
+    font-size: 25pt;
+    font-family:Arial;
+    padding-top: 10px; /*espacamento a esquerda*/
+    padding-left: 10px;  /*espacamento a direita*/
+    height: 350;
+}
