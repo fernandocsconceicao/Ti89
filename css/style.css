@@ -11,12 +11,102 @@
 
 }
 #estrutura #titulo{
-    background-image: url("..imagens/titulo.jpg");/*imagem dentro do titulo*/
+    background-image: url("../imagens/titulo.jpg");/*imagem dentro do titulo*/
     background-position: -400px -380px;
     color: black;
     font-size: 25pt;
     font-family:Arial;
     padding-top: 10px; /*espacamento a esquerda*/
     padding-left: 10px;  /*espacamento a direita*/
-    height: 350;
+    padding-bottom: 2px;
+    height: 200;
+    text-align: left;
+    
+
 }
+/*criando classe*/ 
+
+.titulo{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    
+}
+p{
+    text-align: justify;
+    text-indent: 20px;/*recuo*/
+    font-family: Century Gothic;
+    font-size: 15px;
+}
+#estrutura #menu ul{
+    padding: 0px; /*espacamento*/
+
+
+}
+#estrutura #menu li{
+    /*retira as marcas do marcador*/
+    list-style: none;
+    text-indent: 20px;
+    font-family: Arial;
+    display: inline-block; /* alinhar links na horizontal*/
+    text-align:  center;
+    padding: 0px;
+    width: 239px;
+    padding-right: 40px;
+    
+}
+#estrutura #menu a{
+    font-size: 10pt;
+    color: red;
+    text-align: justify;
+    display: inline-block;
+    text-decoration: none;
+    background-color:yellow;
+    width: 100%;
+    padding: 10px 0px;
+
+
+}
+#estrutura #menu a:hover{
+    background-color:red;
+    color: yellow;
+}
+#estrutura #menu a.atual{
+    background-color: black;
+    color: blanchedalmond;
+}
+#estrutura #conteudo h2{
+    font-family: Arial;
+    font-size: 14pt;
+    padding: 10px;
+}
+/* formatacao para o texto*/
+#estrutura #conteudo .textohome{
+    font-family: 'Times New Roman';
+    font-size: 14pt ;
+    line-height: 15 pt;
+    padding-left: 20px;
+
+
+}
+#Rodape {
+    padding: 20px 0px; font-family: 'Times New Roman';
+    color: yellow;
+    height: 60px;
+    bottom: 0;
+    background-color: tomato;
+    width: 100%;
+    text-align: center;
+
+
+}
+#estrutura #conteudo .imghome img{
+    width: 300 px;
+    height: 250px;
+    margin: 10px;
+
+}
+#estrutura #conteudo .imghome
+{text-align: center;}
+
+
+.abaixar{clear: both;}
