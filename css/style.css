@@ -1,112 +1,97 @@
-/* Zerando a pagina*/
-*{
-    margin: 0px;
-
+body{
+    background-color:rgb(250, 94, 77);
 }
-#estutura{
-    background-color: whitesmoke; /* de fundo;*/
-    width: 90%; /* largura*/
-    margin-left: auto; /*margem a esquerda*/
-    margin-right: auto ;/* margem a direita*/
-
+.grid{
+    display:grid;
+    grid-template-columns:  1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:    " h h h h h h"                           
+                            
+                            "a a a a a a "
+                            "f f f f f f";
+    grid-gap: 0px;                                   
 }
-#estrutura #titulo{
-    background-image: url("../imagens/titulo.jpg");/*imagem dentro do titulo*/
-    background-position: -400px -380px;
-    color: black;
-    font-size: 25pt;
-    font-family:Arial;
-    padding-top: 10px; /*espacamento a esquerda*/
-    padding-left: 10px;  /*espacamento a direita*/
-    padding-bottom: 2px;
-    height: 200;
-    text-align: left;
+
+.grid header {
+    grid-area: h;
+    background-color: salmon;
+}
+.grid header #logo{
+    border: 1px solid;
     
-
-}
-/*criando classe*/ 
-
-.titulo{
-    margin-top: 10px;
-    margin-bottom: 20px;
     
 }
-p{
-    text-align: justify;
-    text-indent: 20px;/*recuo*/
-    font-family: Century Gothic;
-    font-size: 15px;
-}
-#estrutura #menu ul{
-    padding: 0px; /*espacamento*/
-
-
-}
-#estrutura #menu li{
-    /*retira as marcas do marcador*/
-    list-style: none;
-    text-indent: 20px;
-    font-family: Arial;
-    display: inline-block; /* alinhar links na horizontal*/
-    text-align:  center;
-    padding: 0px;
-    width: 239px;
-    padding-right: 40px;
+.grid header #menu{
+    background-color:  salmon;
     
 }
-#estrutura #menu a{
-    font-size: 10pt;
-    color: red;
-    text-align: justify;
-    display: inline-block;
-    text-decoration: none;
-    background-color:yellow;
-    width: 100%;
-    padding: 10px 0px;
 
-
+.grid #artigos { 
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "a1 a2"
+                         "a3 a4";
+    grid-area:a ;
+    grid-gap: 10px;
+    
 }
-#estrutura #menu a:hover{
-    background-color:red;
-    color: yellow;
+.grid #artigos .a1{
+    grid-area: a1;
 }
-#estrutura #menu a.atual{
-    background-color: black;
-    color: blanchedalmond;
+.grid #artigos .a2{
+    grid-area: a2;
 }
-#estrutura #conteudo h2{
-    font-family: Arial;
-    font-size: 14pt;
-    padding: 10px;
+.grid #artigos .a3{
+    grid-area: a3;
 }
-/* formatacao para o texto*/
-#estrutura #conteudo .textohome{
-    font-family: 'Times New Roman';
-    font-size: 14pt ;
-    line-height: 15 pt;
-    padding-left: 20px;
-
-
+.grid #artigos .a4{
+    grid-area: a4;
 }
-#Rodape {
-    padding: 20px 0px; font-family: 'Times New Roman';
-    color: yellow;
-    height: 60px;
-    bottom: 0;
-    background-color: tomato;
-    width: 100%;
+    
+.grid #menu ul
+{
+    line-height: 40px;
+    display: inline-flex;
+    float: left;
+    width: 98%;
+    background-color: rgb(250, 94, 77);
     text-align: center;
-
+   
+    margin-left: inherit;
+    margin-right: 40px;
+   
+    
+    
+}
+.grid #menu li{
+    widTH: 10%;
+    padding-right: 40px;
+    font-family: "Arial";
+    display: inline-flex;
+    text-align: center;
+    
+    padding-right: 50px;
+    
+    
 
 }
-#estrutura #conteudo .imghome img{
-    width: 300 px;
-    height: 250px;
-    margin: 10px;
+.grid #menu a{
+    width: 100%;
+    
+    color:white;
+    text-align: center;
+    font-family: 'Segoe UI';
+    text-decoration: none;
+   
+    
+    
 
 }
-#estrutura #conteudo .imghome
-{text-align: center;}
 
 
-.abaixar{clear: both;}
+.grid footer{
+    border: 1px solid;
+    grid-area: f;
+    background-color: rgb(187, 26, 8); 
+    padding: 60px;
+    text-align:center;
+
